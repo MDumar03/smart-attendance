@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.smart_attendance.edu.co.uk</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url(last.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            max-width: 100%;
+        }
+        .header{
+            padding: 20px;
+        }
+        .header a{
+            margin-left: 10px;
+        }
+        .main{
+              text-align: center;
+              color: #33e0ff;
+              background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(last.jpg);
+
+
+              position: relative;
+              top: 13vh;
+
+              max-width: 300px;
+              margin: 0px auto;
+              padding: 20px;
+              border-radius: 10px;
+              border: solid 2px #d299ff;
+              height: 53vh;
+
+              box-shadow: 3px 3px 3px 3px #d299ff;
+
+
+              
+        }
+
+        .main:hover{
+           
+            box-shadow: 3px 3px 3px 3px #d299ff;
+            transition: 0.5s;
+        }
+        .main h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+      #id{
+        position: relative;
+        top: 4vh;
+        background: transparent;
+         font-family: 'Courier New', Courier, monospace;
+         padding: 7px;
+         color: #33e0ff;
+         border: solid 3px #33e0ff;
+         border-radius: 5px;
+         width: 200px;
+         font-weight: bold;
+
+      }
+      #session{
+        position: relative;
+        top: 4vh;
+
+        background: transparent;
+        color: #33e0ff;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 7px;
+        font-weight: bold;
+        border:solid 3px #33e0ff;
+        border-radius: 4px;
+
+        width: 200px;
+
+      }
+      #btn{
+        position: relative;
+        top: 5vh;
+
+        
+        background-color:#33e0ff;
+        padding: 5px;
+        border: solid 3px #33e0ff;
+        border-radius: 5px;
+        color:white;
+        font-weight: bold;
+        width: 200px;
+
+      }
+
+
+  .footer{
+    text-align: center;
+    padding: 15px;
+    background: transparent;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .op1{
+    font-weight: bold;
+  }
+  
+
+    </style>
+</head>
+<body>
+    <div class="header"><a href="log-in.html"><img src="icon.png" alt="" height="50px" width="50px"></a></div>
+    <br>
+<div class="main">
+         <h2>Register Your Attendance</h2>
+         <br>
+         <form action="" method="post">
+            <input type="text" name="id" placeholder="ID Number" id="id" required>
+            <br><br>
+            <select name="session" id="session" required>
+                <option value="session"  class="op1">Session</option>
+                <option value="9 AM - 11 AM"  class="op1">9 AM - 11 AM</option>
+                <option value="11 AM - 1 PM" class="op1">11 AM - 1 PM</option>
+                <option value="2 PM - 4 PM" class="op1">2 PM - 4 PM</option>
+                <option value="4 PM - 6 PM" class="op1">4 PM - 6 PM</option>
+            </select>
+            <br><br>
+            <button id="btn" value="send" onclick="any()">Submit</button>
+
+
+
+
+
+         </form>
+         <br>
+
+</div>
+
+
+
+      <script type="text/javascript">
+        function any(){
+            var idn=document.getElementById("id").value;
+            var time=document.getElementById("session").value;
+
+        window.alert("Dear"+" "+"student,"+" "+"your"+" "+"attendance"+" "+"has been"+" "+"submitted."+" "+"ID:"+" "+idn+";"+" Session:"+" "+time+".");    
+
+
+        }
+
+
+
+      </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.log_in_page.edu.co.uk</title>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     <style>
+        *{
+         margin: 0px;
+         padding: 0px;   
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url(last.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            max-width: 100%;
+        }
+        .header{
+            max-width: 100%;
+            margin: 0px auto;
+            
+            background-color:transparent;
+            font-family:monospace;
+            padding: 20px;
+            text-align: center;
+
+            border-radius: 0px 0px 10px 10px;
+        }
+        .header h2{
+            font-weight: bold;
+            color: white;
+            font-family:monospace;
+           
+        }
+        .main{
+              text-align: center;
+              color: #33e0ff;
+              background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(last.jpg);
+
+
+              position: relative;
+              top: 13.5vh;
+
+              max-width: 290px;
+              margin: 0px auto;
+              padding: 20px;
+              border-radius: 10px;
+              border: solid 2px #d299ff;
+              height: 53vh;
+               
+              
+        }
+
+        .main:hover{
+           
+            box-shadow: 3px 3px 3px 3px #d299ff;
+            transition: 0.5s;
+        }
+        .main h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        #log{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            
+    
+        }
+
+        #key{
+        position: relative;
+        top: 5vh;
+        background: transparent;
+         font-family: 'Courier New', Courier, monospace;
+         padding: 7px;
+         color: #33e0ff;
+         border: solid 3px #33e0ff;
+         border-radius: 5px;
+         font-weight: bold;
+         width: 200px;
+        }
+       #pass{
+         background: transparent;
+         font-family: 'Courier New', Courier, monospace;
+         padding: 7px;
+         color: #33e0ff;
+         border: solid 3px #33e0ff;
+         border-radius: 5px;
+         
+         position: relative;
+         top: 5vh;
+
+         width: 200px;
+         font-weight: bold;
+
+       }
+       #btn{
+        position: relative;
+        top: 5vh;
+
+        background-color:#33e0ff;
+        padding: 5px;
+        border: solid 3px #33e0ff;
+        border-radius: 5px;
+        
+        width: 200px;
+       }
+
+     </style>
+</head>
+<body>
+    <div class="header"><h2>Smart Attendance System</h2></div>
+    <br>
+    <div class="main">
+        <h2>Log in here...</h2>
+        <br>
+        <form action="" method="post">
+
+            <input type="text" name="access_key" placeholder="Student Account" id="key">
+            <br><br>
+            <input type="password" name="password" placeholder="Pass****" id="pass">
+            <br><br>
+         <button id="btn"><a href="Attendance.html" id="log">Log In</a></button>
+
+        </form>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
